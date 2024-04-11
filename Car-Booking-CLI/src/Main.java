@@ -1,15 +1,41 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        int ch;
+        do{
+            System.out.println("1 - Book car ");
+            System.out.println("2 - view all user Booked Cars ");
+            System.out.println("3 - View all Bookings ");
+            System.out.println("4 - View Available Cars");
+            System.out.println("5 - View Available Electric Cars ");
+            System.out.println("6 - View all Users");
+            System.out.println("7 - Exit");
+            Scanner scanner = new Scanner(System.in);
+            ch = scanner.nextInt();
+            switch (ch){
+                case 1:
+                    BookCar.book();
+                    break;
+                case 2:break;
+                case 3:break;
+                case 4:
+                    Display.displayAvailableCars();
+                    break;
+                case 5:
+                    Display.displayElectricCars();
+                    break;
+                case 6:
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+                    Display.displayUser();
+                    break;
+            }
+        }while(ch !=7);
+
+
     }
 }
