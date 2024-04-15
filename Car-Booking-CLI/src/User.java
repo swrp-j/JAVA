@@ -4,16 +4,22 @@ public class User {
     //user has three parameters - Id, name,has booked?
     String name;
     boolean hasBooked;
-    UUID uuid = UUID.randomUUID();
-    String uniqueId = uuid.toString();
+    String uniqueId;
 
-
-    public User(String name, boolean hasBooked) {
+    public User(String name, String uniqueId) {
         this.name = name;
+        this.uniqueId = uniqueId;
+    }
+
+    public User(boolean hasBooked) {
         this.hasBooked = hasBooked;
     }
 
-    public User(String name) {
-        this.name = name;
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", uniqueId='" + uniqueId + '\'' +
+                '}';
     }
 }

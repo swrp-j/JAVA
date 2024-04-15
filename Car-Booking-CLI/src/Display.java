@@ -2,11 +2,9 @@ public class Display {
     Booking.getUser();
 
 
-    static void displayUser(){
-    Booking booking = new Booking();
-        for (int i = 0; i < booking.user.length; i++) {
-            System.out.println("userId:" + booking.user[i].uniqueId + " UserName: " + booking.user[i].name);
-        }
+     void displayUser(){
+        UserDao.getusers
+
     }
     static int displayElectricCars(){
         int flag = 0;
