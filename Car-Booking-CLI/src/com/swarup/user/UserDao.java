@@ -1,3 +1,5 @@
+package com.swarup.user;
+
 import java.util.UUID;
 
 public class UserDao {
@@ -5,13 +7,13 @@ public class UserDao {
 
     static {
         users = new User[]{
-                new User(UUID.randomUUID().toString(), "Jim"),
-                new User(UUID.randomUUID().toString(), "Jamila"),
+                new User(UUID.randomUUID(), "Jim"),
+                new User(UUID.randomUUID(), "Jamila"),
         };
 
     }
 
-        public User[] getUser(){
+        public User[] getAllUser(){
             return users;
         }
 

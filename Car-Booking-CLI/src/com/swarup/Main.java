@@ -1,3 +1,4 @@
+package com.swarup;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -19,19 +20,16 @@ public class Main {
             ch = scanner.nextInt();
             switch (ch){
                 case 1:
-                    BookCar.book();
+
                     break;
                 case 2:break;
                 case 3:break;
                 case 4:
-                    Display.displayAvailableCars();
                     break;
                 case 5:
-                    Display.displayElectricCars();
                     break;
                 case 6:
 
-                    Display.displayUser();
                     break;
             }
         }while(ch !=7);
