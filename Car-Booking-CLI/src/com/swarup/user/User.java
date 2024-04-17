@@ -12,19 +12,19 @@ public class User {
         this.name = name;
     }
 
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
     public UUID getId() {
         return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
     }
 
     public String getName() {
         return name;
     }
 
-    public User(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 

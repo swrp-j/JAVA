@@ -1,22 +1,16 @@
 package com.swarup.car;
 
-import java.util.TreeMap;
+import java.math.BigDecimal;
 
-public class CarDao {
-    private static Car[] cars;
+public class CarDAO {
 
+    private static final Car[] CARS = {
+            new Car("1234", new BigDecimal("89.00"), Brand.TESLA, true),
+            new Car("5678", new BigDecimal("50.00"), Brand.AUDI, false),
+            new Car("5678", new BigDecimal("77.00"), Brand.MERCEDES, false),
+    };
 
-
-    static {
-        cars = new Car[]{
-                new Car(1234, 134.3f, "Tesla", true),
-                new Car(3123, 14.3f, "BMW", false),
-                new Car(5342, 190.6f, "AUDI", false),
-                new Car(7642, 54.3f, "Honda", false)
-        };
-
-    }
-    public  Car[] getCars() {
-        return cars;
+    public Car[] getAllCars() {
+        return CARS;
     }
 }

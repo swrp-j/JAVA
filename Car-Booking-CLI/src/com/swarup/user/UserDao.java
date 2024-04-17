@@ -1,21 +1,13 @@
 package com.swarup.user;
 
-import java.util.UUID;
+public interface UserDao {
 
-public class UserDao {
-    private static final User[] users;
-
-    static {
-        users = new User[]{
-                new User(UUID.randomUUID(), "Jim"),
-                new User(UUID.randomUUID(), "Jamila"),
-        };
-
-    }
-
-        public User[] getAllUser(){
-            return users;
-        }
-
-    }
-
+    //private CarDao cardao = new CarDao();
+    //never do thi, this is a example of very poor code
+    //here the service class CarDao is tightly bound with Data Access Object class CarDao
+    //we need to provide this DAO class externally, it can be isolated and independently tested
+    //public carService(CarDao cardao){
+    // this.cardao = cardao;
+    // }
+    User[] getUsers();
+}
