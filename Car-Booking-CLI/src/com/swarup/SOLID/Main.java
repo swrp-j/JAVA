@@ -11,14 +11,13 @@ public class Main {
         AreaCalculator areaCalculator = new AreaCalculator();
         Square square = new Square(1);
         Circle circle = new Circle(2);
-
-        List<Shape> shapes = List.of(square, circle);
-        int sum = areaCalculator.sum2(shapes);
-        printer.json(sum);
-        System.out.println(sum);
         Scanner sc = new Scanner(System.in);
-        int n = sc.hasNext()
-
+        int num = sc.nextInt();
+        System.out.println("the entered no. is: " +  num);
+        while(num > 0){
+            System.out.println(num);
+            num--;
+        }
 
     }
 }
