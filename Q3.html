@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Month</title>
+	</head>
+	<body>
+		<script>
+			function getMonth()
+			{
+				var MonthArray = [ "January","February","March","April","May","June","July","August","September","October","November","December"];
+
+				var today = new Date();
+
+				var day = today.getDate();
+				var mon = today.getMonth();
+				var year = today.getFullYear();
+
+				//document.write("Today is : "+"<br>");
+				//document.write("<br>");
+				//document.write(day +"/"+mon+"/"+year);
+				//document.write("The current month is : ",MonthArray[mon]);
+
+				return MonthArray[mon];
+			}
+
+			//function call
+			var currentmonth = getMonth();
+			alert("The current month is : "+currentmonth);
+			
+
+		</script>
+
+	</body>
+
+</html>
+
+

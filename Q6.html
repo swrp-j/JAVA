@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="UTF-8">
+		<title>Color changing box </title>
+		<style>
+                .box{
+			width :100px;
+			height:100px;
+			background-color:blue;
+		}
+		</style>
+	<script>
+		function change()
+		{
+			document.getElementById("apple").style.height = "400px";
+			document.getElementById("apple").style.width = "400px";
+			document.getElementById("apple").style.background = "green";
+		}
+		function change1()
+		{
+			document.getElementById("apple").style.height = "600px";
+                        document.getElementById("apple").style.width = "600px";
+                        document.getElementById("apple").style.background = "red";
+
+		}
+
+	</script>
+	</head>
+	<body>
+
+
+        <div id = "apple" class = "box" onmouseover = "change()"  onmouseout = "change1()"></div>
+	</body>
+
+
+</html>

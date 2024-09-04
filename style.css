@@ -1,0 +1,19 @@
+.box{
+	height:100px;
+	width:100px;
+	background-color : blue;
+}
+
+.box:hover{
+	height:110px;
+        width:110px;
+        background-color : red;
+}
+
+.box:large{
+	height:120px;
+        width:120px;
+        background-color : green;
+}
+
+
